@@ -33,7 +33,7 @@
     document.body.appendChild(popup);
 
     // URL正则表达式
-    const urlRegex = /(?:https?:\/\/)?(?:www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_+.~#?&/=]*)/gi;
+    const urlRegex = /(?:https?:\/\/)?(?:www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_+.~#?&/=]*?)(?=[),\s]|$)/gi;
 
     // 在IIFE开始处定义点击处理函数
     let popupClickHandler = null;

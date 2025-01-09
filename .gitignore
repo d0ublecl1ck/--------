@@ -7,6 +7,9 @@ dist/
 build/
 out/
 
+
+progress.md
+
 # IDE和编辑器
 .idea/
 .vscode/
